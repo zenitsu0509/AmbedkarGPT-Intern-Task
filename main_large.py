@@ -1,4 +1,3 @@
-"""Scalable RAG system for large document collections (8,000+ pages)."""
 from pathlib import Path
 import sys
 
@@ -64,7 +63,6 @@ def index_documents():
     documents = loader.load()
     print(f"Loaded {len(documents)} document(s)")
 
-    # Use recursive splitter for better semantic chunking
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
         chunk_overlap=200,
@@ -97,7 +95,7 @@ def index_documents():
         else:
             vectorstore.add_documents(batch)
 
-    print(f"✓ Indexing complete! Vector store saved to {PERSIST_DIR}")
+    print(f"Indexing complete! Vector store saved to {PERSIST_DIR}")
 
 
 def load_qa_chain():
@@ -121,7 +119,7 @@ def load_qa_chain():
     llm = Ollama(model="mistral")
     retriever = vectorstore.as_retriever(
         search_type="similarity",
-        search_kwargs={"k": 10},  # Retrieve more chunks for comprehensive answers
+        search_kwargs={"k": 10},  
     )
 
     prompt = PromptTemplate(
