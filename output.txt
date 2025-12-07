@@ -1,0 +1,116 @@
+sanug@LAPTOP-K1K7LUPR MINGW64 /e/intern-assigment/New folder/ambedkargpt
+$ cd "e:/intern-assigment/New folder/ambedkargpt" && python run.py --load --query "Who was Dr. B.R. Ambedkar?"
+
+============================================================
+AMBEDKARGPT - SEMRAG-based RAG System
+============================================================
+
+Loading processed data from E:\intern-assigment\New folder\ambedkargpt\data\processed...
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+  Loaded 438 sub-chunks
+  Loaded graph with 454 nodes
+  Loaded 9 communities
+
+Query: Who was Dr. B.R. Ambedkar?
+
+
+Processing query: Who was Dr. B.R. Ambedkar?
+Loading embedding model: all-MiniLM-L6-v2
+  Local search: 5 results
+  Global search: 3 communities, 5 chunks
+✓ Connected to Ollama. Model 'mistral:7b' is available.
+
+============================================================
+ANSWER:
+============================================================
+ Dr. B.R. Ambedkar was a prominent Indian jurist, economist, politician, and social reformer who played an instrumental role in the campaign for India's independence from British rule as well as the establishment of the Indian Republic. He is best known for his work on ending the system of caste discrimination that was prevalent in Hindu society at the time.
+
+In the provided context, it is mentioned that Dr. Ambedkar had unequivocally decided to give up Hinduism and that he had prepared an address for a conference that was found unacceptable by the Reception Committee. This suggests that Dr. Ambedkar was a vocal critic of the caste system and the Hindu scriptures, which were often used to justify discrimination against certain communities in India.
+
+In addition to his work on ending caste discrimination, Dr. Ambedkar also made significant contributions to Indian politics, law, and economics. He served as the Chairman of the Drafting Committee of the Constituent Assembly of India, where he played a key role in drafting the Constitution of India. He also founded the Independent Labour Party and served as its president for several years.
+
+Some of Dr. Ambedkar's notable works include "Annihilation of Caste," "The Buddha and His Dhamma," and "The Problem of the Rupee: Its Origin and Its Solution." He is remembered as a champion of social justice and equality, and his legacy continues to inspire many people in India and around the world.
+
+(Cited from context chunks 363, 362, 377, and 378)
+
+============================================================
+SOURCES:
+============================================================
+1. [local] chunk_363 (relevance: 0.66)
+2. [local] chunk_362 (relevance: 0.65)
+3. [local] chunk_369 (relevance: 0.64)
+4. [local] chunk_377 (relevance: 0.64)
+5. [local] chunk_378 (relevance: 0.63)
+
+sanug@LAPTOP-K1K7LUPR MINGW64 /e/intern-assigment/New folder/ambedkargpt (master)
+$ cd "e:/intern-assigment/New folder/ambedkargpt" && python run.py --load --query "What were Ambedkar's views on caste system?"     
+
+============================================================      
+AMBEDKARGPT - SEMRAG-based RAG System
+============================================================      
+
+Loading processed data from E:\intern-assigment\New folder\ambedkargpt\data\processed...
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+
+============================================================      
+AMBEDKARGPT - SEMRAG-based RAG System
+============================================================      
+
+Loading processed data from E:\intern-assigment\New folder\ambedkargpt\data\processed...
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+AMBEDKARGPT - SEMRAG-based RAG System
+============================================================      
+
+Loading processed data from E:\intern-assigment\New folder\ambedkargpt\data\processed...
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+Loading processed data from E:\intern-assigment\New folder\ambedkargpt\data\processed...
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+Graph loaded: 454 nodes, 3954 edges
+  Loaded 438 chunks
+  Loaded 438 sub-chunks
+  Loaded graph with 454 nodes
+  Loaded 9 communities
+
+Query: What were Ambedkar's views on caste system?
+
+
+Processing query: What were Ambedkar's views on caste system?     
+Loading embedding model: all-MiniLM-L6-v2
+  Local search: 5 results
+  Global search: 3 communities, 5 chunks
+✓ Connected to Ollama. Model 'llama3.2:3b' is available.
+
+============================================================
+ANSWER:
+============================================================
+Based on the provided context, Dr. B.R. Ambedkar's views on the caste system can be summarized as follows:
+
+1. **Anti-social spirit**: Ambedkar mentions that the literature of Hindus is full of caste genealogies, which attempt to give a noble origin to one caste and an ignoble origin to others. He also notes that this anti-social spirit has poisoned the mutual relations of sub-castes.
+
+2. **Not a physical barrier**: Ambedkar clarifies that caste is not a physical object like a wall or barbed wire, but rather a notion, a state of the mind. The destruction of Caste does not mean the destruction of a physical barrier; it means a notional change.   
+
+3. **Origin and genesis**: Ambedkar's study of the caste problem involves four main points:
+        * There is a deep cultural unity among the Hindu population.
+        * Caste is a parcelling into bits of a larger cultural unit.
+        * There was one caste to start with, and classes have become castes through imitation and excommunication.
+
+4. **Caste is not a means of preventing admixture**: Ambedkar argues that the Caste System cannot be said to have grown as a means of preventing the admixture of races or maintaining purity of blood. Instead, it came into being long after different races had commingled in blood and culture.
+
+5. **Shastras and the problem of Caste**: Ambedkar believes that the enemy is not the people who observe Caste, but rather the Shastras which teach them this religion of Caste. He suggests that the solution lies in changing this religion, not the people themselves.
+
+6. **Difficulty in explanation**: Ambedkar notes that caste becomes a problem because it is a parcIn summary, Ambedkar views the caste system as a complex and problematic institution that has its roots in cultural unity but has been distorted by anti-social spirit, Shastras, and a deep-seated sense of purity. He advocates for changing this religion to address the issue of Caste.
+
+============================================================
+SOURCES:
+============================================================
+1. [local] chunk_211 (relevance: 0.67)
+2. [local] chunk_201 (relevance: 0.66)
+3. [local] chunk_195 (relevance: 0.64)
+4. [local] chunk_159 (relevance: 0.64)
+5. [local] chunk_210 (relevance: 0.64)
+(.venv)
