@@ -113,4 +113,3 @@ SOURCES:
 3. [local] chunk_195 (relevance: 0.64)
 4. [local] chunk_159 (relevance: 0.64)
 5. [local] chunk_210 (relevance: 0.64)
-(.venv)
