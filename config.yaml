@@ -1,0 +1,63 @@
+# AmbedkarGPT Configuration
+# SEMRAG-based RAG System for Dr. B.R. Ambedkar's Works
+
+# Data paths
+data:
+  pdf_path: data/Ambedkar_book.pdf
+  processed_dir: data/processed
+  chunks_file: data/processed/chunks.json
+  knowledge_graph_file: data/processed/knowledge_graph.pkl
+  embeddings_file: data/processed/embeddings.pkl
+
+# Semantic Chunking (Algorithm 1)
+chunking:
+  embedding_model: all-MiniLM-L6-v2
+  max_tokens: 1024
+  sub_chunk_tokens: 128
+  overlap_tokens: 32
+  similarity_threshold: 0.5 # Cosine similarity threshold for merging
+  buffer_size: 3 # Number of sentences to consider for buffer merging
+
+# Knowledge Graph Construction
+graph:
+  spacy_model: en_core_web_sm
+  min_entity_freq: 2 # Minimum frequency for entity to be included
+  relationship_types:
+    - WORKS_WITH
+    - BELONGS_TO
+    - LOCATED_IN
+    - MENTIONS
+    - RELATED_TO
+
+# Community Detection
+community:
+  algorithm: louvain # Options: louvain, leiden
+  resolution: 1 # Resolution parameter for community detection
+  min_community_size: 3
+
+# Retrieval Settings
+retrieval:
+  # Local RAG Search (Equation 4)
+  local:
+    entity_similarity_threshold: 0.3 # τ_e
+    chunk_similarity_threshold: 0.2 # τ_d
+    top_k: 5
+
+  # Global RAG Search (Equation 5)
+  global:
+    top_k_communities: 3
+    top_k_chunks: 5
+
+# LLM Settings
+llm:
+  provider: ollama
+  model: mistral:7b
+  base_url: http://localhost:11434
+  temperature: 0.7
+  max_tokens: 2048
+  context_window: 4096
+
+# Logging
+logging:
+  level: INFO
+  file: logs/ambedkargpt.log
